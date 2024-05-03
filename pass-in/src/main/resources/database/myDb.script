@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 553
+SET FILES CHECK 2503
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -58,3 +58,7 @@ INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1
 INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',1612960147,'SA','2024-04-25 14:50:39.630424',6,'1')
 INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',277259538,'SA','2024-04-25 14:50:39.641425',1,'1')
 INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',553901455,'SA','2024-04-25 14:50:39.648426',1,'1')
+INSERT INTO EVENTS VALUES('5d0024f4-75a2-4579-b6a7-fb8b36c1198a','Rocketseat NLW','Aprenda Java de forma gratuita','rocketseat-nlw',500)
+INSERT INTO EVENTS VALUES('6d5d42e8-de88-43d3-b7fb-30b901378ebf','Zezo!NewEvent','Aprenda Java de forma gratuita e rapida!','zezonewevent',1000)
+INSERT INTO EVENTS VALUES('93d8e9de-a970-4e5d-a30c-ac397cde1563','Zezo!','Aprenda Java de forma gratuita!','zezo',500)
+INSERT INTO ATTENDEES VALUES('93d8e9de-a970-4e5d-a30c-ac397cde1563','Fabio Kruschelski','bmx_fabio@zezo.com','6d5d42e8-de88-43d3-b7fb-30b901378ebf',NULL)
